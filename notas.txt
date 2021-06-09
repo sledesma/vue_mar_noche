@@ -19,4 +19,17 @@ Progresivo =/= Monolítico
       3. Gestionar la información que cambia y que, al cambiar, ocasionaría un cambio en la interfaz (modelo)
 
 * IMPLEMENTACION (Como se usa VUE, efectivamente)
+  - Vue como complemento a un proyecto ya existente (Vue CDN)
+  - Vue como la arquitectura de todo un proyecto (Vue CLI)
 
+
+REQUISITOS DE JS
+Objetos
+Async / Await / Promesas (Consultas a API)
+Manejo de los tipos de dato (numeros, textos, array, booleanos, funciones)
+Manejo de eventos (API Event)
+
+RECOMENDABLE
+Node.Js / NPM (lo basico)
+
+NO ES NECESARIO SABER clases, prototipos, patrones de diseño
