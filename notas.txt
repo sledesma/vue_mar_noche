@@ -1,0 +1,22 @@
+¿Que es Vue?
+* Un Framework Progresivo escrito en JavaScript
+Progresivo =/= Monolítico
+
+¿Para que sirve Vue? ¿Para que NO sirve Vue?
+* Para diseñar INTERFACES DE USUARIO
+* Para la WEB (y mobile a través de PWA)
+* De ALCANCE PEQUEÑO Y MEDIANO
+    ¿Y GRAN INTERFAZ? React / Angular
+    ALCANCE = HOY + MAÑANA (¿Hasta donde se va a extender esto?)
+
+¿Como se usa?
+* LOGICA (Como se piensa en VUE)
+  * MVVM - Modelo / Vista / ModeloVista
+  * Organiza la interfaz en componentes reutilizables
+      0. Empezar con un mock (y datos en JSON)
+      1. Dividir la interfaz en una JERARQUIA de componentes
+      2. Crear una version con datos relleno SIN CAMBIOS
+      3. Gestionar la información que cambia y que, al cambiar, ocasionaría un cambio en la interfaz (modelo)
+      
+* IMPLEMENTACION (Como se usa VUE, efectivamente)
+
