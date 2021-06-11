@@ -2,8 +2,8 @@
   <div>
     <titulo v-bind:titulo="textoTitulo"></titulo>
     <div id="content">
-      <div>Texto aqui</div>
-      <input type="text">
+      <div>{{ texto }}</div>
+      <input type="text" v-model="texto">
     </div>
   </div>
 </template>
@@ -18,14 +18,16 @@ export default {
   
   data: function(){
     return {
-      textoTitulo: "Vinclar input con div"
+      textoTitulo: "Vinclar input con div",
+      texto: "Texto aqui"
     }
   }
   
 }
 </script>
 
-<style scoped>
+<style>
+
 #content {
   display: flex;
   flex-direction: column;
