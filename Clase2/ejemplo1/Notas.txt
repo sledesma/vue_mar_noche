@@ -1,0 +1,26 @@
+Transpilación = Traducción -A HTML/CSS/JS- + Compilación
+                (Babel)                    + (Webpack)
+
+Js in english 5
+|
+|
+|
+
+Js en español (síntesis)
+
+
+A)
+const a = "Hola"
+const b = "Mundo"
+const espaciador = " "
+const mensaje = a + espaciador + b
+alert(mensaje)
+
+B)
+alert("Hola mundo")
+
+
+src/main.Js
+  - codigo vue
+  - codigo App.vue
+      - codigo de components/HelloWorld.vue
