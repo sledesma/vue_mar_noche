@@ -1,26 +1,45 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" @click="resetear">
+    <span v-if="cantidadPlanetas > 0">Total planetas: {{ cantidadPlanetas }}</span>
+    <span v-if="cantidadPlanetas <= 0">Cargando...</span>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+import globals from './globals';
+import { onMounted, ref } from 'vue';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+
+  setup() {
+    
+    const cantidadPlanetas = ref(0)
+
+    onMounted(() => {
+      fetch(`${globals.API_ROOT}planets/`)
+        .then(r => r.json())
+        .then(({ count }) => cantidadPlanetas.value = count)
+    })
+
+    return {
+      cantidadPlanetas
+    }
+
+  },
+
+  methods: {
+    resetear() {
+      this.cantidadPlanetas = 0
+      fetch(`${globals.API_ROOT}planets/`)
+        .then(r => r.json())
+        .then(({ count }) => this.cantidadPlanetas = count)
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>

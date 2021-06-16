@@ -1,7 +1,9 @@
 <template>
   <div id="app">
-    <span v-if="cantidadPlanetas > 0">Total planetas: {{ cantidadPlanetas }}</span>
-    <span v-if="cantidadPlanetas <= 0">Cargando...</span>
+    <div v-on:click="mostrarConsola">
+      <span v-if="cantidadPlanetas > 0">Total planetas: {{ cantidadPlanetas }}</span>
+      <span v-if="cantidadPlanetas <= 0">Cargando...</span>
+    </div>
   </div>
 </template>
 
@@ -23,6 +25,16 @@ export default {
       .then(({ count }) => this.cantidadPlanetas = count)
   },
 
+  methods: {
+
+    mostrarConsola() {
+      this.cantidadPlanetas = 0
+      fetch(`${globals.API_ROOT}planets/`)
+        .then(r => r.json())
+        .then(({ count }) => this.cantidadPlanetas = count)
+    }
+
+  }
 }
 </script>
 
