@@ -1,0 +1,20 @@
+1. Componentes / Ciclo de Vida / Core Vue
+
+Clase 3 => Componentes (Ciclo de Vida / Datos / Eventos / Template HTML)
+Clase 4 => Vuex
+Clase 5
+Clase 6
+Clase 7
+Clase 8
+
+
+* Formularios
+* Conexión con API (axios)
+* Vue-Router (navegación entre páginas)
+* Vuex (mejor gestion de los datos)
+- PWA
+- TypeScript
+- Vuetify
+- SASS / LESS
+- Material Design Vue
+
