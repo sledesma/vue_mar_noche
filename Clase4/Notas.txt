@@ -1,0 +1,10 @@
+¿Que es Vuex (Vue + Flux)?
+Es una IMPLEMENTACIÓN de la Arquitectura FLUX para VUE
+
+¿Para qué sirve?
+Para la gestion CENTRALIZADA de los DATOS
+
+¿Como se usa?
+1) Incorporarlo al proyecto
+2) Crear el store
+3)
