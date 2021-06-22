@@ -14,3 +14,4 @@ VISTAS
 SEGUNDA ENTREGA
 * Gestionar los estilos con Bootstrap
 * Añadir un NavBar
+* Poner el NOMBRE de usuario, en vez de su ID, en cada detalle
