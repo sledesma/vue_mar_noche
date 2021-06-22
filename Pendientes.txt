@@ -2,19 +2,23 @@
 
 Clase 3 => Componentes (Ciclo de Vida / Datos / Eventos / Template HTML)
 Clase 4 => Vuex
-Clase 5
-Clase 6
-Clase 7
-Clase 8
+Clase 5 => Vuex + Router + Conexión con API (nativa)
+Clase 6 => (SIN TEMA NUEVO)
+Clase 7 => Repaso y extras
+Clase 8 => Repaso y extras
 
+Lo Mínimo que se pide a una persona que desarrolla en Vue
+Vue Core (Componentes)
+Vuex
+Vue-Router
+Conexión a API
 
+Extras
 * Formularios
 * Conexión con API (axios)
-* Vue-Router (navegación entre páginas)
-* Vuex (mejor gestion de los datos)
 - PWA
 - TypeScript
 - Vuetify
 - SASS / LESS
 - Material Design Vue
-
+- Mixins / Guards

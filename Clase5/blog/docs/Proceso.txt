@@ -1,0 +1,1 @@
+1) Crear una versión estática de cada vista
