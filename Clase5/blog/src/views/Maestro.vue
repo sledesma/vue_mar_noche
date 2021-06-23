@@ -4,17 +4,18 @@
     <h2 class="titulo">Listado de posts</h2>
     <ul class="lista">
       <li>
-        <a href="#"
+        <router-link to="/detalle"
           >sunt aut facere repellat provident occaecati excepturi optio
-          reprehenderit</a
+          reprehenderit</router-link
         >
       </li>
       <li>
-        <a href="#">qui est esse</a>
+        <router-link to="/detalle">qui est esse</router-link>
       </li>
       <li>
-        <a href="#"
-          >ea molestias quasi exercitationem repellat qui ipsa sit aut</a
+        <router-link to="/detalle"
+          >ea molestias quasi exercitationem repellat qui ipsa sit
+          aut</router-link
         >
       </li>
     </ul>

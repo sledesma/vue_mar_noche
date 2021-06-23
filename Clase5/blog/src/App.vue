@@ -1,17 +1,11 @@
 <template>
   <div>
-    <mock></mock>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import Mock from "./views/Detalle.vue";
-
-export default {
-  components: {
-    Mock,
-  },
-};
+export default {};
 </script>
 
 <style></style>

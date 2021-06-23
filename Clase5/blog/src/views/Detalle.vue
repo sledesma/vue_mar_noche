@@ -9,7 +9,7 @@
       sunt rem eveniet architecto
     </div>
     <div class="info">Subido por: USUARIO 1</div>
-    <a href="#" class="atras">Atras</a>
+    <router-link to="/" class="atras">Atras</router-link>
   </div>
 </template>
 

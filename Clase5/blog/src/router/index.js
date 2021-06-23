@@ -20,7 +20,20 @@ Vue.use(VueRouter);
 // 	},
 // ];
 
-const routes = [];
+const routes = [
+  {
+    path: "/",
+    name: "Maestro",
+    component: () =>
+      import(/* webpackChunkName: "master" */ "../views/Maestro.vue"),
+  },
+  {
+    path: "/detalle",
+    name: "Detalle",
+    component: () =>
+      import(/* webpackChunkName: "details" */ "../views/Detalle.vue"),
+  },
+];
 
 const router = new VueRouter({
   mode: "history",
