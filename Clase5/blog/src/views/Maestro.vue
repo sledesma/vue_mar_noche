@@ -3,20 +3,10 @@
     <!--Vista Maestro-->
     <h2 class="titulo">Listado de posts</h2>
     <ul class="lista">
-      <li>
-        <router-link to="/detalle"
-          >sunt aut facere repellat provident occaecati excepturi optio
-          reprehenderit</router-link
-        >
-      </li>
-      <li>
-        <router-link to="/detalle">qui est esse</router-link>
-      </li>
-      <li>
-        <router-link to="/detalle"
-          >ea molestias quasi exercitationem repellat qui ipsa sit
-          aut</router-link
-        >
+      <li v-for="post in $store.getters.getPostTitles" v-bind:key="post.id">
+        <router-link v-bind:to="{ name: 'Detalle', params: { id: post.id } }">
+          {{ post.title }}
+        </router-link>
       </li>
     </ul>
   </div>

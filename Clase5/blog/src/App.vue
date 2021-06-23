@@ -1,11 +1,22 @@
 <template>
   <div>
-    <router-view></router-view>
+    <div v-if="!$store.getters.hayPosts">Cargando...</div>
+    <router-link to="/">Home</router-link>
+    <router-link to="/detalle/1">Ir a 1</router-link>
+    <router-view v-if="$store.getters.hayPosts"></router-view>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  created() {
+    this.$store.dispatch("getPostsFromServer");
+  },
+};
 </script>
 
-<style></style>
+<style>
+.router-link-exact-active {
+  color: black;
+}
+</style>

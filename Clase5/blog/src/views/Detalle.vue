@@ -1,17 +1,27 @@
 <template>
   <div class="detalle">
-    <div class="titulo">
-      sunt aut facere repellat provident occaecati excepturi optio reprehenderit
-    </div>
+    <div class="titulo">[ {{ post.id }} ] {{ post.title }}</div>
     <div class="contenido">
-      quia et suscipit\nsuscipit recusandae consequuntur expedita et
-      cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem
-      sunt rem eveniet architecto
+      {{ post.body }}
     </div>
-    <div class="info">Subido por: USUARIO 1</div>
+    <div class="info">Subido por: USUARIO {{ post.userId }}</div>
     <router-link to="/" class="atras">Atras</router-link>
   </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      post: {},
+    };
+  },
+
+  created() {
+    this.post = this.$store.getters.getOnePost(this.$route.params.id);
+  },
+};
+</script>
 
 <style scoped>
 .detalle {

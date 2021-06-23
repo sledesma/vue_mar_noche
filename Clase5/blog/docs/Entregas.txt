@@ -6,12 +6,8 @@ Vamos a diseñar una aplicación Maestro / Detalle, que consta de lo siguiente:
 * La aplicación debe iniciarse con la vista Maestro e ir a la vista Detalle al hacer click en el título de cada post.
 * Estilos y CSS lo mínimo y necesario.
 
-VISTAS
-  * Maestro
-  * Detalle
-
-
 SEGUNDA ENTREGA
 * Gestionar los estilos con Bootstrap
 * Añadir un NavBar
 * Poner el NOMBRE de usuario, en vez de su ID, en cada detalle
+* Usar AXIOS para las peticiones HTTP
