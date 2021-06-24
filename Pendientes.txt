@@ -15,7 +15,7 @@ Conexión a API
 
 Extras
 * Formularios
-* Conexión con API (axios)
+*Conexión con API (axios)
 - PWA
 - TypeScript
 - Vuetify
