@@ -2,7 +2,8 @@ import axios from 'axios'
 
 export default axios.create({
   headers: {
-    Authorization: "hola"
+    Authorization: "hola",
+    'Content-type': 'application/json'
   }
 })
 

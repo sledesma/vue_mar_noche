@@ -5,10 +5,15 @@ const httpClient = require("./http");
 const server = express();
 
 server.use(cors());
+server.use(express.json());
 
-server.get("/api/stats", (req, res) => {
+server.post("/api/stats", (req, res) => {
+	const fecha = req.body.fecha;
 	httpClient.instance.get(httpClient.endpoints.USD_ENDPOINT).then((t) => {
-		res.json(t.data);
+		const encontrado = t.data.find(function(val){
+			return val.d == fecha
+		})
+		res.json(encontrado);
 	});
 });
 

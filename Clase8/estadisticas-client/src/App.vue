@@ -35,10 +35,14 @@ export default {
       } else {
         this.output = 'Solicitando datos a API...';
         http
-          .get(API_STATS)
+          .post(API_STATS, {
+            fecha: valorActual
+          })
           .then(res => {
-            console.log(res)
-            this.output = 'Cotizacion del dolar de la fecha: ';
+            if(res.data != "")
+              this.output = `Cotizacion del dolar de la fecha: ${res.data.v}`;
+            else
+              this.output = "No se ha encontrado esa cotización";
           });
       }
     }
