@@ -4,7 +4,9 @@ const httpClient = require("./http");
 
 const server = express();
 
-server.get("/", (req, res) => {
+server.use(cors());
+
+server.get("/api/stats", (req, res) => {
 	httpClient.instance.get(httpClient.endpoints.USD_ENDPOINT).then((t) => {
 		res.json(t.data);
 	});
